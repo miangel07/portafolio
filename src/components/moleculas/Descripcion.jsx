@@ -5,6 +5,7 @@ import { TbFileCv } from "react-icons/tb";
 import { GrStatusGood } from "react-icons/gr";
 import Correo from "../atomos/Code";
 import pdf from "/hojaVida.pdf";
+import { FaDownload } from "react-icons/fa";
 
 const Descripcion = () => {
   const [copySuccess, setCopySuccess] = useState(false);
@@ -55,12 +56,13 @@ const Descripcion = () => {
           </div>
         </div>
         {
-          <div className="mt-20 flex flex-row items-center justify-center  md:justify-start  ">
-            <a href={pdf} target="_blank">
-              <TbFileCv className="text-5xl cursor-pointer hover:text-slate-400 " />
-            </a>
+          <div className="mt-20 flex flex-row items-center justify-center gap-3  md:justify-start  ">
+
 
             <p className="font-bebas text-4xl ">HOJA DE VIDA</p>
+            <a href={pdf} target="_blank">
+              <FaDownload className="text-2xl cursor-pointer hover:text-slate-400 " />
+            </a>
           </div>
         }
       </div>

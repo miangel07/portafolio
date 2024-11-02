@@ -1,6 +1,6 @@
 import Footer from "../organismos/Footer";
 import HabilidadesOrganismo from "../organismos/HabilidadesOrganismo";
-import Menu from "../organismos/Navbar";
+
 import Proyectos from "../organismos/Proyectos";
 import SobreMi from "../organismos/SobreMi";
 import SocialOrganismo from "../organismos/SocialOrganismo";
