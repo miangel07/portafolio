@@ -8,10 +8,10 @@ import SocialOrganismo from "../organismos/SocialOrganismo";
 const Layout = () => {
   return (
     <>
-      <div >
-        <div id="sobre_mi" className=" flex justify-center">
+      <section >
+        <header id="sobre_mi" className=" flex justify-center">
           <SobreMi />
-        </div>
+        </header>
         <div id="social" className="flex justify-center mt-16">
           <SocialOrganismo />
         </div>
@@ -21,10 +21,10 @@ const Layout = () => {
         <div id="habilidades" className="flex  justify-center w-full mt-24">
           <HabilidadesOrganismo />
         </div>
-        <div>
+       
           <Footer/>
-        </div>
-      </div>
+      
+      </section>
     </>
   );
 };

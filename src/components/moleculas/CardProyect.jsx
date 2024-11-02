@@ -12,7 +12,7 @@ const CardProyect = () => {
   const propsImages = {
     alt: "Card background",
     className: "object-cover rounded-xl",
-    src: "../../../public/MejorAmigo.png",
+    src: "/MejorAmigo.png",
     width: 150,
   };
 

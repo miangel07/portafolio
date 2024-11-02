@@ -12,7 +12,7 @@ const Social = () => {
     <>
       <div className="flex flex-row gap-3 mt-4 flex-wrap">
         <MyButton className={"w-50"}>
-          <FaGithub className="size-32" /> <p className="font-mono">GitHub</p>
+          <FaGithub className="size-32" /> <a href="https://github.com/miangel07" className="font-mono">GitHub</a>
         </MyButton>
 
         <MyButton className={"w-50"}>

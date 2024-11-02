@@ -4,15 +4,17 @@ import { IoCopyOutline } from "react-icons/io5";
 import { TbFileCv } from "react-icons/tb";
 import { GrStatusGood } from "react-icons/gr";
 import Correo from "../atomos/Code";
-import pdf from "../../../public/cv.pdf";
+import pdf from "/hojaVida.pdf";
 
 const Descripcion = () => {
   const [copySuccess, setCopySuccess] = useState(false);
+  const [copy, setcopy] = useState(false);
 
   const copyText = () => {
     navigator.clipboard
       .writeText("miguelosoriorojas063@gmail.com")
       .then(() => setCopySuccess(true));
+    setcopy(true)
   };
 
   return (
@@ -34,17 +36,23 @@ const Descripcion = () => {
             <Correo>
               <span className="">miguelosoriorojas063@gmail.com</span>
             </Correo>
-              </div>
-            <div className="flex ">
-            <IoCopyOutline
-              onClick={copyText}
-              className={`text-3xl flex cursor-pointer ml-2  ${
-                copySuccess ? "text-green-500" : ""
-              }`}
-            />
+          </div>
+          <div className="flex ">
+            {
+              !copy && (
+                <>
+                  <IoCopyOutline
+                    onClick={copyText}
+                    className={`text-3xl flex cursor-pointer ml-2  ${copySuccess ? "text-green-500" : ""
+                      }`}
+                  />
+                </>
+              )
+            }
 
-            {copySuccess && <GrStatusGood className="ml-2 text-green-500" />}
-            </div>
+
+            {copySuccess && <GrStatusGood  className="ml-2 text-3xl text-green-500" />}
+          </div>
         </div>
         {
           <div className="mt-20 flex flex-row items-center justify-center  md:justify-start  ">
