@@ -17,7 +17,7 @@ const Social = () => {
 
         <MyButton className={"w-50"}>
           <Likendin props={style}></Likendin>
-          <p className="font-mono">Likendin</p>
+          <a href="https://www.linkedin.com/in/miguelOsorio" className="font-mono">Likendin</a>
         </MyButton>
       </div>
     </>

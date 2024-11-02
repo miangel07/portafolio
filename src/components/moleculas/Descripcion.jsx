@@ -20,15 +20,15 @@ const Descripcion = () => {
   return (
     <>
       <div className="flex flex-wrap flex-col ">
-        <div className="w-full flex  flex-col">
+        <div className="w-full flex flex-col">
           <span className="text-gray-400 flex">
             Soy un desarrollador Front-End,
           </span>
-          <span className="text-pink-300 flex">
-            apasionado por la programación, me gusta aprender y aplicar lo
-            aprendido.
+          <span className="text-pink-600 flex ">
+            Apasionado por crear interfaces intuitivas y funcionales, siempre buscando perfeccionar mis habilidades y aprender nuevas tecnologías para mejorar la experiencia del usuario.
           </span>
         </div>
+
 
         <div className="flex justify-center mt-12 flex-row gap-3 items-center flex-wrap  w-full lg:justify-stretch ">
           <CgMail className="text-5xl" />
@@ -51,7 +51,7 @@ const Descripcion = () => {
             }
 
 
-            {copySuccess && <GrStatusGood  className="ml-2 text-3xl text-green-500" />}
+            {copySuccess && <GrStatusGood className="ml-2 text-3xl text-green-500" />}
           </div>
         </div>
         {
