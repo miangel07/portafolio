@@ -21,14 +21,15 @@ const Descripcion = () => {
   return (
     <>
       <div className="flex flex-wrap flex-col ">
-        <div className="w-full flex flex-col">
-          <span className="text-gray-400 flex">
+        <div className="w-full flex flex-col   lg:justify-end ">
+          <span className="text-gray-400 text-center text-sm sm:text-lg md:text-xl lg:text-xl">
             Soy un desarrollador Front-End,
           </span>
-          <span className="text-pink-600 flex ">
+          <span className="text-pink-600 text-center mt-2 text-sm  md:text-xl lg:text-xl">
             Apasionado por crear interfaces intuitivas y funcionales, siempre buscando perfeccionar mis habilidades y aprender nuevas tecnologías para mejorar la experiencia del usuario.
           </span>
         </div>
+
 
 
         <div className="flex justify-center mt-12 flex-row gap-3 items-center flex-wrap  w-full lg:justify-stretch ">
