@@ -8,6 +8,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { FaCode } from "react-icons/fa6";
 import MyButton from "../atomos/Boton";
 
+
 const CardProyect = () => {
   const propsImages = {
     alt: "Card background",
@@ -23,7 +24,7 @@ const CardProyect = () => {
           <Cardheader className={"pb-0 pt-2 px-4 flex-col items-start"}>
             <div className="flex  w-full justify-between items-center p-2 mt-6 flex-wrap">
               <h1 className="uppercase font-bebas text-4xl ">Mascotas</h1>
-              <MyButton className="text-white bg-blue-400 border-solid border-2 border-blue-400  flex items-center">
+              <MyButton onClick={() => window.location.href == "https://github.com/miangel07/Mascota.git"} className="text-white bg-blue-400 border-solid border-2 border-blue-400  flex items-center">
                 CODE <FaCode />
               </MyButton>
             </div>
